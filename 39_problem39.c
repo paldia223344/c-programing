@@ -18,20 +18,18 @@ Output 2:
  #include<stdio.h>
  
  int main(){
-    int n ;
-    printf("Enter a 4 digit number");\
-    scanf("%d%d%d%d", &n);
- if (n/2 != 0)
- { 
-    printf("ODD NUMBERS  will be %d",n/2 != 0);
- } else{
-    printf("no odd digits ");
- }
 
- printf("%d", n/2 != 0);
- 
+  int number ;
+  printf("Enter  a number");
+  scanf("%d", &number);
+ int digit = number %10;
+ int product = 1 ;
+  if (digit % 2 != 0)
+  {
+    product *= digit;
+  }
+  
+  printf("product of odd digits in a number will be %d", product);
 
-
- 
-    return 0;
+  return 0;
  }
