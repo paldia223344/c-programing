@@ -15,7 +15,8 @@ Output 1:
  
  int main(){
     int arr[10] = {1,2,3,4,5};
-    int i, n, value , value1;
+    int i;
+    int n;
     printf("At what position do we rotate");
     scanf("%d", &n);
        for ( i = 4-n; i < 4; i++)
@@ -23,7 +24,7 @@ Output 1:
         printf("%d", arr[i]);
        }
        
-       for ( i = 0; i < 4-k; i++)
+       for ( i = 0; i < 4-n; i++)
        {
          printf("%d", arr[i]);
        }
